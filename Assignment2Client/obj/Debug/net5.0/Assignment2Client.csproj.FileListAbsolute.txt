@@ -58,4 +58,3 @@ C:\Users\10211\RiderProjects\DNP1\Assignment2Client\obj\Debug\net5.0\ref\Assignm
 C:\Users\10211\RiderProjects\DNP1\Assignment2Client\obj\Debug\net5.0\Assignment2Client.pdb
 C:\Users\10211\RiderProjects\DNP1\Assignment2Client\obj\Debug\net5.0\Assignment2Client.genruntimeconfig.cache
 C:\Users\10211\RiderProjects\DNP1\Assignment2Client\obj\Debug\net5.0\Assignment2Client.csproj.CopyComplete
-C:\Users\10211\RiderProjects\DNP1\Assignment2Client\bin\Debug\net5.0\adults.json
