@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tier1.Data;
+using Tier1.Services;
 
 namespace Tier1
 {
@@ -28,6 +29,7 @@ namespace Tier1
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddScoped<ISockets, Sockets>();
             services.AddSingleton<ICustomerService,CustomerService>();
         }
 
