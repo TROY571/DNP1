@@ -6,6 +6,7 @@ namespace Tier1.Data
 {
     public interface ICustomerService
     {
-        void RegisterCustomer(Customer customer);
+        void Connect();
+        string RegisterCustomer(int id,string name,string mail,string password);
     }
 }

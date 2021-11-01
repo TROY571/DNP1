@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using Tier1.Model;
+using Tier1.Services;
 
 namespace Tier1.Data
 {
@@ -11,19 +12,16 @@ namespace Tier1.Data
     {
         private string customerFile = "customers.json";
         private IList<Customer> customers;
-        
-        public void RegisterCustomer(Customer customer)
+
+        public void Connect()
         {
-            int max = customers.Max(adult => adult.Id);
-            customer.Id = (++max);
-            customers.Add(customer);
-            WriteAdultsToFile();
+            Client.getInstance().Connect();
+        }
+        public string RegisterCustomer(int id,string name,string mail,string password)
+        {
+            return Client.getInstance().RegisterCustomer(id, name, mail, password);
         }
         
-        private void WriteAdultsToFile()
-        {
-            string customerAsJson = JsonSerializer.Serialize(customers);
-            File.WriteAllText(customerFile,customerAsJson);
-        }
+        
     }
 }
